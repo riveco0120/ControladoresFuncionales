@@ -14,6 +14,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 
 @Configuration
 public class ConsultaDatoRouter {
+
     @Bean
     public RouterFunction<ServerResponse> getAll(UseCaseListar useCaseListar) {
         return route(
