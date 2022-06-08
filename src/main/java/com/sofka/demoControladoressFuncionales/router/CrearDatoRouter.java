@@ -13,6 +13,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 
 @Configuration
 public class CrearDatoRouter {
+
     @Bean
     public RouterFunction<ServerResponse>createquestion(UseCaseCrear useCaseCrear){
         return route(POST("/crear").and(accept(MediaType.APPLICATION_JSON)),
